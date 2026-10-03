@@ -448,50 +448,6 @@ header.hero {
   animation: pulseDot 2s infinite ease-in-out;
 }
 
-/* Inspirational Quote Card */
-.hero-quote-card {
-  margin: 20px 0 26px;
-  background: var(--surf);
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--hi);
-  border-radius: var(--radius-md);
-  padding: 16px 22px;
-  box-shadow: var(--card-shadow);
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  transition: transform var(--transition-fast), border-color var(--transition-fast);
-}
-.hero-quote-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--hi);
-}
-.quote-icon {
-  color: var(--hi);
-  flex-shrink: 0;
-  margin-top: 3px;
-}
-.quote-content {
-  flex: 1;
-}
-.quote-text {
-  margin: 0;
-  font-family: "IBM Plex Sans", serif;
-  font-size: 1.05rem;
-  font-style: italic;
-  font-weight: 500;
-  color: var(--ink);
-  line-height: 1.55;
-}
-.quote-author {
-  display: block;
-  margin-top: 6px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--mute);
-  letter-spacing: 0.02em;
-}
-
 @media (max-width: 768px) {
   .hero-top-row {
     flex-direction: column-reverse;
@@ -1228,19 +1184,6 @@ footer {
         <span class="avatar-status-dot"></span>
         <span>Open to Leadership Roles</span>
       </div>
-    </div>
-  </div>
-
-  <!-- Inspirational Leadership Quote by Ratan Tata -->
-  <div class="hero-quote-card">
-    <div class="quote-icon" aria-hidden="true">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-    </div>
-    <div class="quote-content">
-      <blockquote class="quote-text">
-        "If you want to walk fast, walk alone, but if you want to walk far, walk together."
-      </blockquote>
-      <div class="quote-author">– Said by Ratan Tata</div>
     </div>
   </div>
 
