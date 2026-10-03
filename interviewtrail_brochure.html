@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>InterviewTrail – Product Architecture &amp; Workflow Brochure | Maria Nayaga Thanaraj</title>
-<meta name="description" content="Executive one-page architecture brochure and mobile screens for InterviewTrail: Compose Multiplatform (Android, iOS, Web) and serverless Firebase interview intelligence platform.">
+<title>InterviewTrail – Product Architecture &amp; Scope Brochure | Maria Nayaga Thanaraj</title>
+<meta name="description" content="Executive one-page architecture brochure and scope alignment for InterviewTrail: Compose Multiplatform (Android, iOS, Web) and serverless Firebase interview intelligence platform.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;600;700;800&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -247,7 +247,7 @@ body {
   gap: 20px;
   border-bottom: 2px solid var(--line-light);
   padding-bottom: 16px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 .brand-group {
   flex: 1;
@@ -274,7 +274,7 @@ body {
   color: var(--acc);
   border: 1px solid rgba(var(--acc-rgb), 0.25);
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -299,12 +299,39 @@ h1.project-title {
   margin: 0;
 }
 .project-tagline {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--mute);
   margin: 6px 0 0 0;
-  max-width: 65ch;
+  max-width: 68ch;
   line-height: 1.4;
+}
+
+/* Scope Compliance Badge Row */
+.scope-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.scope-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  background: var(--surf-alt);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.scope-badge.verified {
+  background: var(--success-bg);
+  color: var(--success);
+  border-color: rgba(13, 130, 82, 0.3);
 }
 
 /* Author / Resume Badge in Header */
@@ -943,7 +970,7 @@ h1.project-title {
 <!-- Main One-Page Brochure Sheet -->
 <main class="brochure-sheet" id="brochure">
 
-  <!-- Header with Official Logo -->
+  <!-- Header with Official Logo & Verified Scope Metadata -->
   <header class="header-top">
     <div class="brand-group">
       <div class="header-brand-row">
@@ -957,8 +984,16 @@ h1.project-title {
         </div>
       </div>
       <p class="project-tagline">
-        Cross-platform technical interview intelligence and peer learning platform. Built with a unified Jetpack Compose UI running across Android, iOS, and Web on top of serverless Firebase infrastructure.
+        Lightweight, community-driven platform for sharing real IT interview experiences. Built with a unified Compose Multiplatform UI across Android, iOS, and Web, developed in <b>Google Antigravity IDE with Gemini AI</b>, and powered by serverless <b>Firebase for real-time cloud data storage</b>.
       </p>
+      <div class="scope-meta-row">
+        <span class="scope-badge verified">✔ Scope Verified (Phase 1 Final)</span>
+        <span class="scope-badge">Firebase Data Storage</span>
+        <span class="scope-badge">Antigravity IDE + Gemini AI</span>
+        <span class="scope-badge">IT-Focused Only</span>
+        <span class="scope-badge">India Launch Scope</span>
+        <span class="scope-badge">Strict Non-Chat Guided Posts</span>
+      </div>
     </div>
     <div class="author-badge">
       <div class="author-label">System Architect &amp; Mobile Lead</div>
@@ -979,8 +1014,8 @@ h1.project-title {
       <span>Shared Compose UI</span>
     </div>
     <div class="metric-card">
-      <b>3 OS Platforms</b>
-      <span>Android · iOS · Web (Wasm)</span>
+      <b>10 Core Features</b>
+      <span>Full Scope Alignment</span>
     </div>
     <div class="metric-card">
       <b>0 Servers</b>
@@ -999,7 +1034,7 @@ h1.project-title {
     <div>
       <div class="section-head">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-        <h2>End-to-End Application Workflow</h2>
+        <h2>End-to-End Application Workflow (10 Core Features)</h2>
       </div>
 
       <!-- Interactive Stepper (Screen) -->
@@ -1011,16 +1046,16 @@ h1.project-title {
           <b>02</b><span>Communities</span>
         </button>
         <button class="wf-btn" data-step="2" role="tab" aria-selected="false">
-          <b>03</b><span>Voice Post</span>
+          <b>03</b><span>3 Post Types</span>
         </button>
         <button class="wf-btn" data-step="3" role="tab" aria-selected="false">
-          <b>04</b><span>Private Groups</span>
+          <b>04</b><span>Private Circles</span>
         </button>
         <button class="wf-btn" data-step="4" role="tab" aria-selected="false">
           <b>05</b><span>Prompt Loop</span>
         </button>
         <button class="wf-btn" data-step="5" role="tab" aria-selected="false">
-          <b>06</b><span>Daily Log</span>
+          <b>06</b><span>Learning Feed</span>
         </button>
       </div>
 
@@ -1031,8 +1066,18 @@ h1.project-title {
 
       <!-- Printable Static Workflow Summary (Print Only) -->
       <div class="print-all-steps" style="display:none;">
-        <div style="margin-top:6px; font-size:7.5pt; line-height:1.35; color:#374151;">
-          <b>Workflow Lifecycle:</b> <b>1. Auth &amp; Verified Profile:</b> Email verification + experience bracket + tech stacks. <b>2. Stack Communities:</b> Tech hubs with searchable interview rounds and seminar feeds. <b>3. Guided Voice-to-Text Post:</b> Multi-round Q&amp;A editor with native speech recognition. <b>4. Private Groups &amp; Cross-Post:</b> Email-bound invite links via native share sheets. <b>5. Post-Interview Prompt:</b> Automated reminder converted to post on interview completion. <b>6. Daily Learning Spaces:</b> Micro-journaling with "Need Help" blocker tags.
+        <div style="margin-top:6px; font-size:7.4pt; line-height:1.35; color:#374151;">
+          <b>Full Scope Feature Matrix (Scope Document Aligned):</b>
+          <b>1. Registration &amp; Profile:</b> Mandatory email verification, experience level (Fresher to 10+y), tech stacks &amp; India location hierarchy.
+          <b>2. 3 Structured Post Types:</b> Interview Experience (rounds + Q&amp;A), Work Status, and Seminar/Workshop. Global voice-to-text dictation.
+          <b>3. Communities:</b> Pre-built tech stacks with dual tabs: Interviews (searchable by company) &amp; Workshops/Seminars.
+          <b>4. Private Groups:</b> User-created, invite-only via email-bound link shared over native share sheet (WhatsApp). No phone number invites.
+          <b>5. Cross-Posting:</b> Author-only sharing into private circles with attribution preserved.
+          <b>6. Companies Tab:</b> Bottom nav tab to browse by company, filter by stack, and follow for new post notifications.
+          <b>7. Permissions:</b> Author-only edit and delete enforced via Firestore Security Rules.
+          <b>8. Reminder &amp; Prompt Loop:</b> Upcoming interview alert + Yes/No prompt leading to post form (no ratings/feedback collection).
+          <b>9. Profile Suggestions:</b> In-app suggestions emailed to admin via Cloud Functions with tracked lifecycle status.
+          <b>10. Learning Section:</b> Daily progress journals by Tech Space &amp; Learning Group with "Need Help" blocker tag. No comments in Phase 1.
         </div>
       </div>
 
@@ -1040,7 +1085,7 @@ h1.project-title {
       <div class="arch-flow-box">
         <div class="section-head" style="margin-bottom:6px; border-bottom:none; padding:0;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-          <h2 style="font-size:0.84rem;">Architecture &amp; Data Pipeline</h2>
+          <h2 style="font-size:0.84rem;">Serverless Firebase &amp; AI-Accelerated Multiplatform Architecture</h2>
         </div>
         <div class="arch-flow-grid">
           <div class="arch-node">
@@ -1054,7 +1099,7 @@ h1.project-title {
           </div>
           <div class="arch-arrow">➔</div>
           <div class="arch-node">
-            <div class="arch-node-title">Serverless Firebase</div>
+            <div class="arch-node-title">Firebase Data Storage</div>
             <div class="arch-node-desc">Direct Firestore REST/SDK, Auth, FCM, Cloud Functions, &amp; Security Rules</div>
           </div>
         </div>
@@ -1071,7 +1116,7 @@ h1.project-title {
             <button class="sc-tab active" id="tab-screen-feed" role="tab" aria-selected="true" onclick="switchScreenshot('feed')">Interview Feed</button>
             <button class="sc-tab" id="tab-screen-prompt" role="tab" aria-selected="false" onclick="switchScreenshot('prompt')">Prompt Modal</button>
           </div>
-          <span class="sc-badge">Compose Mobile UI</span>
+          <span class="sc-badge">Scope Verified UI</span>
         </div>
         <div class="device-row">
           <div class="device-frame" title="Click to toggle mobile screens" onclick="toggleScreenClick()">
@@ -1081,12 +1126,12 @@ h1.project-title {
           <div class="device-details">
             <h3 class="device-screen-title" id="device-screen-title">Round-by-Round Q&amp;A Trail</h3>
             <p class="device-screen-desc" id="device-screen-desc">
-              Structured interview experience post with expandable technical rounds, real interview questions, and one-tap voice dictation.
+              100% scope-compliant Compose UI: Community dual-tabs (Interviews &amp; Workshops), company filter, structured Q&amp;A rounds, voice dictation, and zero comment/rating noise.
             </p>
             <ul class="device-highlights" id="device-highlights">
-              <li>Company &amp; Stack taxonomy tags</li>
-              <li>Voice-to-Text microphone input</li>
-              <li>Bottom 4-tab native navigation</li>
+              <li>Dual-tabs: Interviews vs Workshops</li>
+              <li>Voice-to-Text microphone dictation</li>
+              <li>Strict non-chat: 0 ratings, 0 comments</li>
             </ul>
           </div>
         </div>
@@ -1095,7 +1140,7 @@ h1.project-title {
       <!-- Technical Highlights Section -->
       <div class="section-head" style="margin-top:10px;">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-        <h2>Technical Highlights</h2>
+        <h2>Technical Highlights &amp; Rules</h2>
       </div>
 
       <div class="pillar-card">
@@ -1104,6 +1149,14 @@ h1.project-title {
           <h3>Compose Multiplatform for 3 Platforms</h3>
         </div>
         <p>Entire navigation, components, and views run natively on Android, iOS (SwiftUI host), and Web (Kotlin/Wasm), slashing UI development cost by 65%.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-header">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 8V4m0 16v-4m8-4h-4M8 12H4m12.364-5.636l-2.828 2.828M7.464 16.536l-2.828 2.828m11.314 0l-2.828-2.828M7.464 7.464L4.636 4.636"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          <h3>Antigravity IDE &amp; Gemini AI Development</h3>
+        </div>
+        <p>Engineered using Google Antigravity IDE with Gemini AI for AI-driven multiplatform prototyping, agentic code refactoring, and automated test suite synthesis.</p>
       </div>
 
       <div class="pillar-card">
@@ -1125,9 +1178,9 @@ h1.project-title {
       <div class="pillar-card">
         <div class="pillar-header">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-          <h3>Direct-to-Firestore Security Rules</h3>
+          <h3>Firebase for Data Storage &amp; Security Rules</h3>
         </div>
-        <p>Zero custom backend services needed. Strict document-level security rules enforce author-only edit, delete, and cross-posting permissions directly in the database.</p>
+        <p>Zero custom backend services. Serverless Firebase Cloud Firestore handles structured data storage, real-time sync, and document-level security rules enforcing author-only permissions.</p>
       </div>
 
       <!-- Core Tech Specification Badges -->
@@ -1135,11 +1188,14 @@ h1.project-title {
         <div class="spec-list">
           <span class="spec-badge">Kotlin 2.0+</span>
           <span class="spec-badge">Compose Multiplatform</span>
+          <span class="spec-badge">Firebase Data Storage</span>
+          <span class="spec-badge">Antigravity IDE</span>
+          <span class="spec-badge">Gemini AI</span>
           <span class="spec-badge">Material3</span>
           <span class="spec-badge">Firebase Firestore</span>
           <span class="spec-badge">Firebase Auth</span>
           <span class="spec-badge">Coroutines</span>
-          <span class="spec-badge">Serialization</span>
+          <span class="spec-badge">Cloud Functions</span>
           <span class="spec-badge">Native Speech API</span>
           <span class="spec-badge">Wasm (Web)</span>
           <span class="spec-badge">SwiftUI Host (iOS)</span>
@@ -1151,10 +1207,10 @@ h1.project-title {
   <!-- Bottom Executive Summary Banner -->
   <footer class="bottom-banner">
     <div class="bottom-text">
-      <b>Delivery Leadership Takeaway:</b> Designed, architected, and engineered by <b>Maria Nayaga Thanaraj</b> as a proof-of-concept for scalable, multiplatform enterprise mobile apps with 100% code reuse, modern Compose paradigms, and serverless reliability.
+      <b>Delivery Leadership Takeaway:</b> Designed, architected, and engineered by <b>Maria Nayaga Thanaraj</b> using <b>Antigravity IDE with Gemini AI</b> and <b>Firebase for data storage</b> as a proof-of-concept for scalable, multiplatform enterprise mobile apps with 100% code reuse, modern Compose paradigms, and serverless reliability.
     </div>
     <div class="bottom-links">
-      <a href="index.html#projects" class="btn-action">View Portfolio</a>
+      <a href="index.html#personal-project" class="btn-action">View Portfolio</a>
       <a href="mailto:mariathanaraj@outlook.com" class="btn-action primary">Contact Architect</a>
     </div>
   </footer>
@@ -1162,84 +1218,84 @@ h1.project-title {
 </main>
 
 <script>
-// --- Step Data for Interactive Workflow ---
+// --- Step Data for Interactive Workflow: 100% Scope Document Mapped ---
 const STEPS = [
   {
     num: "01",
-    title: "Account Onboarding & Verified Profile",
-    tag: "Security & Verification",
+    title: "Registration & Verified Profile",
+    tag: "Scope §1",
     screen: "feed",
-    desc: "Mandatory email verification stops bots. Profiles require current company, experience bracket (Fresher to 10+ yrs Lead), tech stacks, and domain to ensure high-signal content.",
+    desc: "Mandatory email verification stops bots. Profiles capture current company, experience bracket (Fresher to 10+ yrs Lead), tech stacks, domain, and India location hierarchy.",
     items: [
-      "Email/password & Google Auth integration",
+      "Email/password & Google Auth with verification",
       "Experience bracket taxonomy (Fresher → 10+ yrs)",
-      "Multi-tech stack & domain categorization",
-      "Geographic hierarchy (India focus with state/city)"
+      "Multi-tech stack & IT domain categorization",
+      "India location hierarchy (Country/State/City)"
     ]
   },
   {
     num: "02",
-    title: "Stack-Based Communities & Search",
-    tag: "Knowledge Discovery",
+    title: "Communities & Dual Tabs",
+    tag: "Scope §3 & §6",
     screen: "feed",
-    desc: "Tech communities split into dual tabs: 'Interviews' (company filterable with round-by-round cards) and 'Workshops/Seminars' for event takeaways and tech slides.",
+    desc: "Pre-built tech communities split into dual tabs: 'Interviews' (company-searchable) and 'Workshops/Seminars'. Dedicated Companies tab to browse by firm & follow for alerts.",
     items: [
       "Pre-seeded tech stacks (Android, Kotlin, iOS, Backend)",
-      "Dual tab interface: Interviews vs. Workshops",
-      "Company search & live stack filtering",
-      "Zero unmoderated chat noise — structured posts only"
+      "Dual tabs: Interviews vs. Workshops/Seminars",
+      "Searchable & filterable by company name",
+      "Dedicated Companies tab with Follow notifications"
     ]
   },
   {
     num: "03",
-    title: "Structured Post Creator with Voice-to-Text",
-    tag: "Multimodal Compose",
+    title: "3 Post Types & Voice Dictation",
+    tag: "Scope §2 & §7",
     screen: "feed",
-    desc: "Guided multi-round interview forms (e.g. Technical 1, System Design, HR) with nested Q&A pairs. Voice-to-text dictation enables rapid input without typing friction.",
+    desc: "Three guided post types (Interview Experience, Work Status, Seminar/Workshop). Global English voice-to-text dictation on all inputs. Strictly no chat, no comments.",
     items: [
       "Dynamic round builder with question/answer pairs",
-      "Integrated speech-to-text dictation on all inputs",
-      "Work status & seminar takeaway specialized forms",
-      "Image attachment & compression pipeline"
+      "Global voice-to-text speech recognition on fields",
+      "Work status & seminar takeaway guided forms",
+      "Author-only edit and delete permissions enforced"
     ]
   },
   {
     num: "04",
-    title: "Private Circles & Cryptographic Invites",
-    tag: "Privacy & Distribution",
+    title: "Private Circles & Cross-Posting",
+    tag: "Scope §4 & §5",
     screen: "feed",
-    desc: "User-created private study circles. Invitations use email-bound tokens shared via OS share sheets. Authors can cross-post their community experiences into private circles.",
+    desc: "User-created private study groups. Shareable invite links tied to invited person's email (no phone numbers), shared via native share sheet. Author-only cross-posting.",
     items: [
-      "Email-bound invite tokens via native share sheet",
+      "Email-bound invite tokens via native Share Sheet",
+      "Share links externally via WhatsApp, Slack, etc.",
       "Author-only cross-posting with attribution intact",
-      "Private alumni & internal preparation cohorts",
-      "Document-level Firestore security rule validation"
+      "Document-level Firestore security rule enforcement"
     ]
   },
   {
     num: "05",
-    title: "Lifecycle Automated Post-Interview Prompt",
-    tag: "Closed-Loop Automation",
+    title: "Interview Reminders & Prompt Loop",
+    tag: "Scope §8",
     screen: "prompt",
-    desc: "Job seekers schedule upcoming interviews. After the interview time passes, a reactive Yes/No prompt triggers in-app, converting real interviews into shared community trails.",
+    desc: "Candidates log upcoming interviews (date, time, company, venue) with toggleable reminders. Post-interview, a simple Yes/No prompt triggers post creation (no rating collection).",
     items: [
-      "Scheduled interview reminder with push alerts",
+      "Pre-interview scheduled notification reminder",
       "Reactive 'Did your interview happen?' prompt modal",
-      "One-tap transition to pre-filled post creator",
-      "Eliminates cold-start dropoff in community sharing"
+      "1-tap launch into pre-filled post creation flow",
+      "Zero rating/feedback collection — pure Q&A signal"
     ]
   },
   {
     num: "06",
-    title: "Daily Tech Learning Spaces & Blocker Flags",
-    tag: "Peer Growth Feed",
+    title: "Learning Journals & Suggestions",
+    tag: "Scope §9 & §10",
     screen: "feed",
-    desc: "LinkedIn-style progress journals divided into Tech Spaces and Private Learning Groups. Allows candidates to log daily topics and flag 'Need Help' blockers for peer support.",
+    desc: "Day-by-day learning logs divided into Tech Spaces and Private Learning Groups with 'Need Help / Stuck' blocker flags. In-app suggestions auto-emailed to admin via Cloud Functions.",
     items: [
-      "Daily progress feed by subscribed technology",
-      "Special 'Need Help / Stuck' blocker flag",
-      "Daily journaling with voice-dictated notes",
-      "Author-only editing and deletion enforcement"
+      "Tech Learning Spaces & invite-only Learning Groups",
+      "Special 'Need Help / Stuck' blocker doubt flag",
+      "Voice-dictated daily progress logs & notes",
+      "Profile suggestions with tracked status (Submitted → Done)"
     ]
   }
 ];
@@ -1300,17 +1356,17 @@ const SCREEN_DATA = {
   feed: {
     img: "assets/interviewtrail_screen_feed.jpg",
     title: "Round-by-Round Q&A Trail",
-    desc: "Structured interview experience post with expandable technical rounds, real interview questions, and one-tap voice dictation.",
+    desc: "100% scope-compliant Compose UI: Community dual-tabs (Interviews & Workshops), company filter, structured Q&A rounds, voice dictation, and zero comment/rating noise.",
     bullets: [
-      "Company & Stack taxonomy tags",
-      "Voice-to-Text microphone input",
-      "Bottom 4-tab native navigation"
+      "Dual-tabs: Interviews vs Workshops",
+      "Voice-to-Text microphone dictation",
+      "Strict non-chat: 0 ratings, 0 comments"
     ]
   },
   prompt: {
     img: "assets/interviewtrail_screen_prompt.jpg",
     title: "Automated Post-Interview Prompt",
-    desc: "Reactive prompt triggering automatically when an interview date/time passes, leading directly into the structured post creator.",
+    desc: "Reactive prompt triggering automatically when an interview date passes, leading directly into the post creator without feedback/rating collection.",
     bullets: [
       "Automated prompt reduces sharing drop-off",
       "Pre-populates company name & tech stack",
