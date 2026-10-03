@@ -219,6 +219,7 @@ body {
   align-items: center;
   gap: 8px;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 .nav-brand-dot {
   width: 9px;
@@ -297,13 +298,14 @@ h1, h2, h3, h4 {
   letter-spacing: -0.015em;
 }
 h1 {
-  font-size: clamp(2.4rem, 7vw, 4.4rem);
+  font-size: clamp(1.6rem, 4.4vw, 3.3rem);
   font-weight: 800;
   letter-spacing: -0.025em;
   background: linear-gradient(135deg, var(--ink) 40%, var(--acc) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  white-space: nowrap;
 }
 [data-theme="dark"] h1 {
   background: linear-gradient(135deg, #FFFFFF 30%, var(--acc) 100%);
@@ -1083,6 +1085,10 @@ footer {
 
 /* Responsive */
 @media (max-width: 640px) {
+  h1 {
+    font-size: clamp(1.2rem, 5.8vw, 1.85rem);
+    white-space: nowrap;
+  }
   .flow-stepper {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1101,6 +1107,12 @@ footer {
   }
   .stats {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: clamp(1.05rem, 5.5vw, 1.35rem);
+    white-space: nowrap;
   }
 }
 
